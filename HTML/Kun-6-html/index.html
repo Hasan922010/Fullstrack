@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro'yxatdan o'tish</title>
+  </head>
+  <body>
+    <h1>Ro'yxatdan o'tish</h1>
+    <p>Iltimos barcha maydonlarni to'ldiring.</p>
+    <hr />
+    <form action="/register" method="post">
+      <fieldset>
+        <legend>Shaxsiy ma'lumotlar</legend>
+
+        <p>
+          <label for="firstName">Ism:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Xasan"
+            minlength="2"
+            maxlength="30"
+            required
+            autofocus
+          />
+        </p>
+
+        <p>
+          <label for="lastName">Familiya:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Aliyev"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="birthDate">Tug'ilgan sana:</label>
+          <input
+            type="date"
+            name="birthDate"
+            id="birthDate"
+            placeholder="Aliyev"
+            minlength="1950-01-01"
+            maxlength="2010-12-31"
+            required
+          />
+        </p>
+
+        <p>
+          Jinsi: <br />
+          <label>
+            <input type="radio" name="gender" value="male" required />Erkak
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" required />Ayol
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Aloqa ma'limotlari</legend>
+        <p>
+          <label for="email">Email manzil:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Hasan@gmail.com"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="phone">Telefon raqam:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+998 88 777 66 55"
+            required
+          />
+        </p>
+        <p>
+          <label for="city">Shahar:</label> <br />
+          <select name="city" id="city">
+            <option value="">--Shaharni tanlang--</option>
+            <optgroup label="Markaz">
+              <option value="tashkent">Toshkent</option>
+              <option value="guliston">Guliston</option>
+            </optgroup>
+
+            <optgroup label="Janub">
+              <option value="samarqand">Samarqand</option>
+              <option value="buhoro">Buhoro</option>
+              <option value="xiva">Xiva</option>
+            </optgroup>
+            <optgroup label="Boshqa">
+              <option value="andijon">Andijon</option>
+              <option value="namangan">Namangan</option>
+              <option value="fargona">Farg'ona</option>
+            </optgroup>
+          </select>
+        </p>
+
+        <p>
+          <label for="address">Yashash manzili:</label><br />
+          <textarea
+            name="address"
+            id="address"
+            row="3"
+            cols="40"
+            placeholder="To'liq manzil: ko'cha, uy raqami, kvartira..."
+          ></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Akkount ma'lumotlari</legend>
+        <p>
+          <label for="username">Foydalanuvchi nomi:</label> <br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Xasan_uz"
+            minlength="4"
+            maxlength="20"
+            required
+          />
+          <small>4-20 belgi</small>
+        </p>
+        <p>
+          <label for="password">Parol:</label> <br />
+          <input type="password" name="password" minlength="8" required />
+          <small>Minumum 8ta belgi</small>
+        </p>
+        <p>
+          <label for="confirmPassword">Parolni tasdiqlang:</label> <br />
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="avatar">Profil rasmi</label>
+          <input type="file" id="avatar" name="avatar" accept="image/*" />
+          <small>JPG,PNG, yoki GIF</small>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qiziqishlaringiz</legend>
+        <p>
+          Qaysi mavzular sizni qiziqtiradi? (bir nechtasini tanlashingiz mumkin)
+        </p>
+
+        <label>
+          <input type="checkbox" name="interest" value="programming" />
+          Dasturlash
+        </label>
+        <br />
+
+        <label>
+          <input type="checkbox" name="interest" value="design" /> Dizayner
+        </label>
+        <br />
+
+        <label>
+          <input type="checkbox" name="interest" value="business" /> Biznes
+        </label>
+        <br />
+
+        <label>
+          <input type="checkbox" name="interest" value="marketing" /> Marketing
+        </label>
+        <br />
+
+        <label>
+          <input type="checkbox" name="interest" value="languages" /> Chet
+          tillari
+        </label>
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Qo'shimcha</legend>
+        <p>
+          <label for="favColor">Sevimli rang:</label>
+          <input type="color" name="favColor" id="favColor" value="#3498b" />
+        </p>
+        <p>
+          <label for="experience"> Dasturlash tajribasi (yil):</label> <br />
+          <input
+            type="range"
+            name="experience"
+            id="experience"
+            min="0"
+            max="20"
+            value="0"
+            step="1"
+          />
+        </p>
+
+        <p>
+          <label>
+            <input type="checkbox" name="newlatter" value="yes" checked />
+            Yangiliklarga obuna bo'lish
+          </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="terms" value="agreed" required>
+                Men <a href="#">Foydalanish shartlariga roziman</a>
+            </label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Ro'yxatdan o'tish</button>
+        <button type="reset">Tozalash</button>
+      </p>
+    </form>
+  </body>
+</html>
