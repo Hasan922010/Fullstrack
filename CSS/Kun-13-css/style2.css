@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background: #f4f6f8;
+}
+/*Asosiy navizgatsiya*/
+.asosiy-menyu{
+    background: white;
+    padding:16px 40px;
+    display: flex;  /* yonma-yon joylashish (ertaga chuqur o'rganamiz) */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0, 0.05);
+}
+/*Logo*/
+.logo{
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-decoration:none;
+}
+/*Menyu-ro'yxati -ul*/
+.menyu-royxati{
+    list-style: none; /* nuqtalarni olib tashlash */
+}
+/* ASOSIY: li elementlarini yonma-yon qilish */
+.menyu-royxati li{
+    display: inline-block; /* default block edi, endi yonma-yon */
+}
+.menyu-royxati li a{
+    display: inline-block;   /* default block edi, endi yonma-yon */
+    padding: 10px 20px;
+    color: #555;
+    text-decoration: none;
+    font-weight:500;
+    border-radius:6px;
+    transition: 0.3s;
+}
+.menyu-royxati li a:hover{
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+.login-tugma{
+    background:#3498db;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-tugma:hover{
+    background: #3980b9;
+}
+/*Asosiy kontent*/
+.kontent{
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.kontent h1{
+    color: #2c3e50;
+    margin-bottom: 16px;
+}
+.kontent p{
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+code{
+    background: #ecf0f1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e74c3c;
+}

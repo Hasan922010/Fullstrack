@@ -1,0 +1,59 @@
+/* 1-vazifa  */
+/* Umumiy uslub — barcha rang qutilariga */
+.rang{
+    padding: 20px;
+    margin: 10px;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+/* 4-xil format */
+
+.nom{
+    background-color: red;
+    
+}
+.hex{
+    background-color: #2ecc70;
+}
+.rgb{
+    background-color: rgb(52,152,219);
+
+}
+.hsl{
+    background-color: hsl(280, 60%, 50%);
+}
+
+/* ============================== */
+
+/* 2-vazifa kodi */
+
+body{
+    font-family: 'Poppins', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 40px;
+    line-height: 1.6; /*qatorlar oralig'i*/
+}
+h1,h2{
+    font-family: 'Playfair Display', serif;
+    color: #2c3e50;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+h2{
+    font-size: 28px;
+    color: #7f8c8d;
+    font-weight:400;
+}
+p{
+    font-size: 16px;
+}
+.muhim{
+    color: #e74c3c;
+    font-weight: 600;
+}

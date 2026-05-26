@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root font-size — rem uchun asos */
+html {
+  font-size: 14px;            /* default — telefon */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f8;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* DEFAULT — TELEFON */
+.header{
+    background: white;
+    padding:16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight:700;
+}
+.menyu{
+    display: flex;
+    gap: 16px;
+}
+.menyu a{
+    color: #555;
+    text-decoration:none;
+    font-weight: 500;
+    font-size:0.95rem;
+} 
+.menyu a:hover{
+    color: #3498db;
+}
+.hero{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.hero h1{
+    font-size: 1.8rem;
+    margin-bottom:12px;
+    line-height: 1.2;
+}
+.hero p{
+    font-size: 1rem;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+.hero-btn{
+    background: white;
+    color: #764ba2;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Galereya — telefon: 1 ustun */
+.galereya{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding:30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.karta{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.karta:hover{
+    transform: translateY(-5px);
+}
+.rasm{
+    height: 180px;
+}
+
+.bg1 { background: linear-gradient(135deg, #667eea, #764ba2); }
+.bg2 { background: linear-gradient(135deg, #f093fb, #f5576c); }
+.bg3 { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+.bg4 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+
+.karta h3{
+    padding: 16px 20px 4px 20px;
+    font-size: 1.1rem;
+}
+
+.karta p{
+    padding: 0 20px 16px 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #27ea60;
+}
+
+.footer{
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* PLANSHET — 768px dan boshlab */
+
+@media(min-width:768px){
+    html{
+        font-size: 15px;
+    }
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 40px;
+    }
+    .hero{
+        padding: 80px 40px;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .galereya{
+        grid-template-columns: repeat(2,1fr); /* 2 ustun */
+    }
+}
+
+/* KOMPYUTER — 1024px dan boshlab */
+
+@media (min-width:1024px) {
+    html{
+        font-size: 16px;
+    }
+
+    .hero{
+        padding: 100px 40px;
+
+    }
+    .hero h1{
+        font-size: 3rem;
+    }
+
+    .hero p{
+        font-size: 1.2rem;
+    }
+
+    .galereya{
+        grid-template-columns: repeat(4,1fr);  /* 4 ustun */
+        gap: 24px;
+    }
+    
+}

@@ -1,0 +1,148 @@
+/* class selectorlar - `.` bilan  */
+.muhim{
+    color: red;
+    font-weight: bold;
+}
+.oddiy{
+    color:gray;
+}
+
+/* ID selector - `#` bilan  */
+
+#maxsus{
+    color: blue;
+    font-size: 24px;
+}
+
+/* nav ichidagi BARCHA havolalar — sariq fon */
+
+nav a{
+    background-color: yellow;
+    padding: 5px;
+}
+/* faqat nav'ning BEVOSITA farzandi bo'lgan a — qizil rang */
+nav > a{
+    color: red;
+}
+
+/* oddiy tugma uslubi  */
+
+.tugma{
+    background-color: lightblue;
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;  /* burchaklarni yumaloq qiladi */
+    cursor: pointer;     /* sichqoncha qo'l ko'rinishi */
+    font-size: 16px;
+    transition: 0.3s;   /* o'zgarishlar yumshoq bo'lsin */
+
+}
+
+
+/* Sichqoncha ustiga kelganda — sehrli o'zgarish! */
+
+.tugma:hover{
+    background-color: navy;
+    color: white;
+}
+
+/* Bosilgan paytda  */
+
+.tugma:active{
+    background-color: black;
+}
+
+/* Ro'yxatdagi BIRINCHI element */
+
+li:first-child{
+    font-weight: bold;
+    color: green;
+}
+
+/* OXIRGI ELEMENT */
+
+LI:last-child{
+    color: gray;
+    font-style: italic;
+}
+
+/* mustaqil mashq */
+.karta{
+    background: yellow;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.katta{
+    font-size: 24px;
+    font-weight: bold;
+}
+#alohida{
+    background: green;
+    padding: 20px;
+    margin: 10px;
+}
+ 
+input{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+}
+input[type="email"]{
+    border-color:blue ;
+}
+input:focus{
+    border-color: green;
+    outline: none;
+}
+.yubor{
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.yubor:hover{
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+
+/* menu */
+
+.menyu{
+    list-style:none;
+    padding: 0;
+    width: 300px;
+
+}
+.menyu li{
+    padding: 12px 20px;
+    transition: 0.3s; 
+    cursor: pointer;
+}
+
+.menu li:nth-child(odd){
+    background-color: #f0f0f0;
+}
+.menyu li:nth-child(even){
+    background-color: white;
+}
+.menyu li:first-child{
+    font-weight: bold;
+    color: navy;
+    font-size: 20px;
+
+}
+.menyu li:last-child{
+    color: red;
+    font-weight: bold;
+}
+.menyu li:hover{
+    background-color: yellow;
+    transform: translateX(10px);
+}

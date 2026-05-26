@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* FLEXBOX'NING ENG BUYUK SEHRI */
+body{
+    font-family: 'Poppins',sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    display: flex;           /* 1. Flexbox yoqilgan */
+    justify-content: center; /* 2. Gorizontal markaz */
+    align-items: center;  /* 3. Vertikal markaz */
+    min-height: 100vh;    /* 4. Butun ekran balandligi */
+}
+.kartochka{
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.2);
+}
+.ikon{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+.kartochka h2{
+    color: #2c3e50;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.kartochka p{
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+.kartochka p strong{
+    color: #e74c3c;
+}
+.tugma{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(102,162,234,0.3);
+}
+.tugma:hover{
+    transform: translateY(-3px);
+     box-shadow: 0 8px 20px rgba(102,162,234,0.4);
+
+}

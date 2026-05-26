@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background: #f4f6f8;
+    padding:40px;
+}
+h1{
+    color: #2c3e50;
+    margin-bottom: 16px;
+}
+body > p{
+    color: #555;
+    font-size: 16px;
+}
+/*  MODAL QOPLAMA — fixed, butun ekranni qoplaydi */
+
+.modal-qoplama{
+    position: fixed; /* brauzer oynasiga yopishadi */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;  /* butun ekran */
+    background: rgba(0,0,0,0.6) ; /* yarim shaffof qora */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;  /* eng tepada */
+
+}
+
+/* MODAL KARTOCHKA — markazda */
+.modal-karta{
+    position: relative;  /* "yopish tugma" uchun ota */
+    background: white;
+    width: 90%;
+    max-width: 450px;
+    padding: 50px 40px 40px 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.3);
+    animation: pastdan-tepaga 0.4s ease;   /* ochilish animatsiyasi */
+
+}
+
+/* Animatsiya — modal yumshoq paydo bo'lishi */
+@keyframes pastdan-tepaga {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+/*  YOPISH TUGMASI — yuqori-o'ngda (absolute) */
+.yopish-tugma{
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #95a5a6;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+}
+.yopish-tugma:hover{
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+.modal-icon{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+.modal-karta h2{
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+.modal-karta p{
+    font-size: 16px;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+.modal-tugmalar{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.btn-asosiy{
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-asosiy:hover{
+    background: #2980b9;
+}
+.btn-ikkinchi{
+    background: #ecf0f1;
+    color: #555;
+    border: none;
+    padding: 12px 28px;
+     border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-ikkinchi:hover{
+    background:#d5dbdb ;
+}

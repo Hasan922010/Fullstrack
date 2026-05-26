@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f6f8;
+}
+
+/* Asosiy struktura -areas bilan chizilgan */
+.page {
+  display: grid;
+  grid-template-columns: 220px 1fr 250px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "left main right"
+    "footer footer footer";
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* har elementga grid-area nomi ber */
+.header {
+  grid-area: header;
+}
+.left-side {
+  grid-area: left;
+}
+.main {
+  grid-area: main;
+}
+
+.right-side {
+  grid-area: right;
+}
+.footer {
+  grid-area: footer;
+}
+.header{
+    background: white;
+    padding: 16px 24px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+.header nav a{
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.header nav a:hover{
+    color: #3498db;
+}
+
+.left-side, .right-side{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.left-side h3, .right-side h3{
+    color: #2c3e50;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.left-side ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.left-side li{
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.left-side li:hover{
+    background: #ecf0f1;
+}
+.right-side p{
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.main{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.main h1{
+    color: #2c3e50;
+    margin-bottom: 16px;
+}
+
+.main p{
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.main code{
+    background: #ecf0f1;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e74c3c;
+}
+
+/* Footer */
+.footer{
+    background: #2c3e50;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 10px;
+    text-align: center;
+}

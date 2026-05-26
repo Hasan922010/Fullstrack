@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ecf0f1;
+  padding: 30px;
+}
+
+/* Gazeta layout */
+.gazeta{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 280px 200px;
+    gap: 16px;
+}
+/* Bosh maqola - 2ustun keng, 2 qator baland */
+
+.bosh-maqola{
+    grid-column: span 2;
+    grid-row:  span 2;
+    background: linear-gradient(135deg, #2c3c50, #34495e);
+    color: white;
+    padding: 32px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.kichik-1,.kichik-2,.kichik-3,.kichik-4{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kichik-1:hover,.kichik-2:hover,.kichik-3:hover,.kichik-4:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.kichik-1{
+    background: #fff3cd;
+}
+
+.kichik-2{
+    background: #d4edda;
+}
+
+.kichik-3{
+    background: #f8d7da;
+}
+
+.kichik-4{
+    background: #d1ecf1;
+}
+/*Umumiy uslublar*/
+.kategoriya{
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    opacity: 0.7;
+}
+.bosh-maqola .kategoriya{
+    color: #f1c40f;
+    opacity: 1;
+}
+.bosh-maqola h1{
+    font-family: 'Playfair Display',serif;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+.bosh-maqola p{
+    font-size: 16px;
+    opacity: 0.85;
+    line-height: 1.5;
+}
+
+.kichik-1 h2,.kichik-2 h2,.kichik-3 h2,.kichik-2 h2{
+    font-family: 'Playfair Display',serif;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #2c3c50;
+}

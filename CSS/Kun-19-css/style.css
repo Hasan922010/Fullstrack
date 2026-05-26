@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.qutu{
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+.qutu h1{
+    margin-bottom: 16px;
+    color: #2c3e50;
+}
+.qutu p{
+    color:#555;
+    line-height: 1.6;
+    
+}
+/* DEFAULT -telefon(mobile-first) */
+body{
+    background: #e74c3c;  /*qizil-telefon*/
+}
+.ekran-nomi::after{
+    content: "-TELEFON";
+}
+
+/* PLANSHET-768PX dan boshlab */
+@media (min-width:768px) {
+    body{
+        background: #f39c12;
+    }
+
+    .ekran-nomi::after{
+        content: "-PLANSHET ";
+    }
+    
+}
+
+/* KOMPYUTER-1024px dan boshlab */
+@media (min-width:1024px) {
+    body{
+        background: #27ae60;
+    }
+
+    .ekran-nomi::after{
+        content: "-KOMPYUTER ";
+    }
+    
+}
+

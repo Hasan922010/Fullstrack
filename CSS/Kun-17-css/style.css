@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f4f6f8;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.grid-konteyner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.bola{
+    background-color: #3498db;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 8px;
+}

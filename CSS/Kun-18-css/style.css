@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f4f6f8;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px;
+    gap: 15px;
+}
+.b{
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+}
+/* A-2 ustun */
+.b1{
+    grid-column: span 2;
+    background: #27ae60;
+}
+/* B — 2 qator baland */
+.b2 {
+  grid-row: span 2;
+  background: #27ae60;
+}

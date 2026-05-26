@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    background: #f4f6f8;
+    padding-top: 70px;  /* fixed header balandligini hisobga olib */
+}
+/* FEXID HEADER */
+.fixed-header{
+    position: fixed;  /* brauzer oynasiga yopishadi */
+    top: 0;           /* yuqori chetda */
+    left: 0;
+    right: 0;         /* butun kenglikka */
+    height: 70px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0,0.08);
+    padding: 0 40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;   /* boshqa elementlar ustida */
+
+}
+.logo{
+    font-size: 22px;
+    font-weight: 700;
+    color: #2c3e50;
+
+}
+.fixed-header nav a{
+    margin-left: 24px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.fixed-header nav a:hover{
+    color: #3498db;
+}
+
+/* Asosiy kontent — har bo'lim baland */
+main section{
+    min-height: 80vh;  /* har bo'lim ekran balandligida */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+
+}
+main h1{
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom:20px;
+}
+main p{
+    font-size:18px;
+    line-height: 1.7;
+    color: #555;
+}
+/* ⭐ FIXED "YUQORIGA" TUGMASI */
+.yuqoriga-tugma{
+    position: fixed; /* brauzer oynasiga yopishadi */
+    bottom: 30px;   /* pastdan 30px */
+    right: 30px;    /* o'ngdan 30px */
+    width: 56px;
+    height: 56px;
+    border-radius: 50%; /* doira */
+    background: #3498db;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(52,152,219,0.4);
+    z-index: 99;
+    transition: 0.3s;
+}
+.yuqoriga-tugma:hover{
+    background: #2980b9;
+    transform: translateY(-3px);
+}

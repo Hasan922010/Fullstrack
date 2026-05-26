@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.markaz{
+    text-align: center;
+}
+h1{
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+.spinnerlar{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.spinner-blok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.spinner-blok p{
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* SPINNER 1 — KLASSIK AYLANUVCHI */
+.spinner-1{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ecf0f1;
+    border-top:5px solid #3498db; /* faqat tepa qismi rangli */
+    border-radius:50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from{ transform: rotate(0deg); }
+    to {transform: rotate(360deg);}
+    
+}
+
+/* SPINNER 2 — SAKRASHAYOTGAN NUQTALAR */
+
+.spinner-2{
+    display: flex;
+    gap: 8px;
+}
+.spinner-2 span{
+    width: 12px;
+    height: 12px;
+    background: #3498db;
+    border-radius: 50%;
+    animation: bounce 0.6s ease infinite;
+}
+.spinner-2 span:nth-child(2){
+    animation-delay:0.15s;   /* ikkinchi nuqta kechikadi */
+}
+
+.spinner-2 span:nth-child(3){
+    animation-delay:0.3s;   /* Uchinchi nuqta kechikadi */
+}
+
+@keyframes bounce{
+    0%, 100%{ transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+    
+}
+
+
+/* SPINNER 3 — PULSATSIYA */
+.spinner-3{
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    border-radius: 50%;
+    animation: pulsatsiya 1.2s ease infinite;
+}
+
+@keyframes pulsatsiya {
+    0%,100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+    
+}
+
+/* TUGMA ICHIDAGI KICHIK SPINNER */
+.yuklash-tugma{
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.kichik-spinner{
+    width: 18px;
+    height: 18px;
+    border-radius: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite; 
+}

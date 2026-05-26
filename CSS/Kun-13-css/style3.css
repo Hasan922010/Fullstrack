@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f6f8;
+  padding: 60px 20px;
+}
+.post {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.post h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+/* Meta info — span'lar yonma-yon */
+.meta {
+  margin-bottom: 24px;
+  color: #95a5a6;
+  font-size: 14px;
+}
+
+/* span — default inline, lekin chiroyli ko'rinishi uchun */
+.muallif {
+  font-weight: 600;
+  color: #2c3e50;
+}
+.ajratuvchi {
+  margin: 0 8px; /* span — inline, lekin gorizontal margin ishlaydi */
+  color: #bdc3c7;
+}
+.post p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 28px;
+}
+/* Yorliqlar konteyneri */
+.yorliqlar {
+  margin-bottom: 28px;
+}
+/*HAR YORLIQ — INLINE-BLOCK */
+.yorliq {
+  display: inline-block; /* yonma-yon, lekin o'lchamli */
+  padding: 6px 14px; /* ichida bo'shliq */
+  margin: 4px 4px 4px 0; /*  vertikal margin ham ishlaydi */
+  border-radius: 20px; /* tabletka */
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Har bir yorliq — boshqa rang */
+.yorliq.js{
+    background: #fff3cd;
+    color: #856404;
+}
+.yorliq.frontend{
+    background: #d1ecf1;
+    color: #0c5460;
+}
+.yorliq.beginner{
+    background: #f8d724;
+    color: #155724;
+
+}
+.yorliq.tutorial{
+    background: #f8d7da;
+    color: #721c24;
+}
+.yorliq:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Harakatlar tugmalari */
+.harakatlar{
+    border-top: 1px solid #ecf0f1;
+    padding-top: 20px;
+}
+/* TUGMALAR INLINE-BLOCK */
+.tugma{
+    display: inline-block;
+    padding: 10px 18px;
+    margin-right: 8px;
+    background: #f8f9fa;
+    color: #555;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transform: 0.3s;
+}
+.tugma:hover{
+    background: #ecf0f1;
+    transform: translateY(-1px);
+}

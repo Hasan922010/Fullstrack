@@ -1,0 +1,92 @@
+/* umumiy reset va asosiy uslub */
+body{
+    font-family: 'Poppints',sans-serif;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    margin: 0 auto;
+
+}
+/* kartochka */
+.karta{
+    background-color: white;
+    width: 320px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.karta:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Rasm joyi (rang gradent bilan) */
+.karta-rasm{
+    height: 200px;
+    background: linear-gradient(135deg,#667eea,#764ba2); /*binafsha garadent*/
+
+}
+
+/* Tarkib qismi */
+.karta-tarkib{
+    padding:24px;
+}
+/* Kategoriya yorlig'i */
+.kategoriya{
+    display: inline-block;
+    background-color: #fff3cd;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+/* Maxsulot nomi */
+.nom{
+    font-size: 22px;
+    font-weight:700;
+    color: #2c3c50;
+    margin: 0 0 8px 0;
+}
+
+/* Tafsif */
+.tavsif{
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+
+/* Narxi va tugma qatori */
+
+.narx-qatori{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.narx{
+    font-size:26px;
+    font-weight: 700;
+    color: #27ae60; /*yashil-narx uchun yaxshi*/
+}
+
+/* Tugma */
+.sotib-olish{
+    background-color: #2c3c50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sotib-olish:hover{
+    background-color: #34495e;
+    transform: scale(1.05);
+}

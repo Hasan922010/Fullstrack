@@ -1,0 +1,98 @@
+/*vazifa 1*/
+body{
+    font-family: 'Merriweather', serif; /* o'qishga qulay font*/
+    background-color: #fdfdfd;
+    color: #2c3e50;
+    margin: 0;
+    padding: 60px 20px;
+}
+
+article{
+    max-width: 680px; /*matnni juda keng bo'lmasligi uchun (o'qish oson)*/
+    margin: 0 auto;
+}
+h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2; /*sarlavha siqiqroq*/
+    letter-spacing: -1px; /*Katta sarlavhalarda biroz manfiy yaxshi*/
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+.lead{
+    font-size: 22px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 32px;
+    font-style: italic;
+}
+p{
+    font-size: 18px;
+    line-height: 1.7;  /* ENG MUHIM — qator oralig'i */
+    margin-bottom: 20px;
+}
+strong{
+    color: #e74c3c;
+}
+
+/* vazifa 2 */
+
+.tugmalar{
+    display: flex;
+    gap: 16px;
+    padding: 40px;
+    background: #f4f6f8;
+}
+
+.tugma{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;  /* KATTA HARFLAR */
+    letter-spacing: 1.2px;      /* keng harflar oralig'i */
+    padding: 14px 28px;
+    border-radius:6px ;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none; /* havola uchun chiziqni olib tashlash */
+    display: inline-block;
+}
+/* Asosiy tugma -to'liq rangli */
+
+.asosiy{
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+}
+.asosiy:hover{
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44,62,80,0.3);
+}
+
+/*Chegarali tugma-faqat ramka*/
+.chegarali{
+    background-color: transparent;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+}
+.chegarali:hover{
+    background-color: #2c3e50;
+    color: white;
+}
+/* Havola tugma — rangsiz, faqat matn */
+.havola{
+    background-color: transparent;
+    color: #7f8c8d;
+    border: none;
+    letter-spacing: 0;     /* havoladda kerak emas */
+    text-transform: none;  /* tabiiy holat */
+    padding: 14px 8px;
+
+}
+.havola:hover{
+    color:#2c3e50;
+    text-decoration: underline;
+    text-underline-offset: 4px; /* chiziq pastroq */
+}

@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f8;
+  padding: 40px;
+}
+
+h1{
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.effektlar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.quti{
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    /*ASOSIY — transition har doim asosiy elementda */
+    transition:0.3s  ease;
+}
+/* 1. YUQORIGA KO'TARILADI */
+
+.e1:hover{
+  transform:translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,015);
+}
+
+/* 2. KATTALASHADI */
+.e2:hover{
+  transform:scale(1.1);
+  background: #3498db;
+  color: white;
+}
+
+/* 3. AYLANADI */
+.e3:hover{
+  transform: rotate(5deg) scale(1.05);
+  background: #f39c12;
+
+}
+
+/* 4. RANG O'ZGARADI */
+.e4{
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  color: white;
+}
+
+.e4:hover{
+  background: linear-gradient(135deg,#f093fb,#f5576c);
+  transform: translateY(-5px);
+}

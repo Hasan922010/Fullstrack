@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f6f8;
+  padding: 40px;
+}
+h1 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+/* ASOSIY -auto fit responsive */
+
+.galereya {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+/* Kartochka */
+.karta {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.karta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.rasm {
+  height: 180px;
+}
+.bg1 {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+.bg2 {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+.bg3 {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+.bg4 {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+.bg5 {
+  background: linear-gradient(135deg, #fa709a, #fee140);
+}
+
+.karta h3{
+    padding: 16px 20px 8px 20px;
+    color: #2c3e50;
+}
+.karta p{
+    padding: 0 20px 20px 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #27ae60;
+}

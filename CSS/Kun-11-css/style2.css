@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.hero{
+      /* Diagonalli gradient fon */
+      background: linear-gradient(135deg,#667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:40px 20px;
+      color: white;
+}
+.hero-tarkib{
+    max-width: 800px;
+    text-align: center;
+}
+/* Yuqoridagi yorliq */
+.badge{
+    display: flex;
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* keng oraliq — premium ko'rinishi */
+
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin-bottom: 32px;
+    
+}
+
+/* Asosiy sarlavha */
+
+h1{
+    font-size: 72px;
+    font-weight: 800; 
+    line-height: 1.1; /* sarlavha siqiq */
+    letter-spacing: -2px; /* katta sarlavhalarda manfiy yaxshi */
+    text-shadow: 0 4px 20px rgba(0,0,0, 0.2); /* nozik soya */
+    margin-bottom: 24px;
+}
+
+/* Sarlavhada urg'u so'zi */
+
+.urgu{
+    background: linear-gradient(90deg,#ffd700, #ffed4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  /* Bu  trick: matnga gradient rang */
+}
+/* Pastki matn */
+.hero-matn{
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    opacity: 0.9; /* biroz shaffof — yumshoqroq */
+    margin-bottom:40px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Tugmalar konteyner */
+
+.hero-tugmalar{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Asosiy tugma — oq fon */
+
+.btn-asosiy{
+    background-color: white;
+    color: #667eea;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 50px;  /* to'liq yumaloq */
+    cursor:pointer;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+
+}
+
+.btn-asosiy:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Shaffof tugma — chegara bilan */
+
+.btn-shaffof{
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 36px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+.btn-shaffof:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+
+    color: white;
+}
