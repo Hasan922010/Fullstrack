@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Vazifalaringni boshqaring</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom konfiguratsiya -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+    <!-- Bu yerga loyiha keladi -->
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+            <div
+                class="w-8 h-8 bg-gradient-to-br from-brand-500 to-brand-700 rounded-lg flex items-center justify-center text-white font-bold">
+                T
+            </div>
+            <span class="text-xl font-bold text-gray-900">TaskFlow</span>
+        </div>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="#features" class="text-gray-600 hover:text-brand-600 transition">Imkoniyatlar</a>
+            <a href="#pricing" class="text-gray-600 hover:text-brand-600 transition">Tariflar</a>
+            <a href="#about" class="text-gray-600 hover:text-brand-600 transition">Biz haqimizda</a>
+        </nav>
+
+        <!-- Tugmalar -->
+        <div class="flex items-center gap-3">
+            <a href="#" class="hidden sm:block text-gray-700 hover:text-brand-600 font-medium transition">
+                Kirish
+            </a>
+            <a href="#"
+                class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2 rounded-lg shadow-md hover:shadow-lg transition">
+                Boshlash
+            </a>
+        </div>
+
+    </div>
+</header>
+    <!-- HERO -->
+    <section class="bg-gradient-to-br from-brand-50 via-white to-purple-50 py-12 md:py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+    
+                <!-- Chap: matn -->
+                <div class="text-center lg:text-left space-y-6">
+    
+                    <!-- Yorliq -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-4 py-1.5 rounded-full text-sm font-semibold">
+                        <span class="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></span>
+                        Yangi: AI yordamchi
+                    </div>
+    
+                    <!-- Sarlavha -->
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                        Vazifalaringni
+                        <span class="bg-gradient-to-r from-brand-600 to-purple-600 bg-clip-text text-transparent">
+                            10 marta tezroq
+                        </span>
+                        bajaring
+                    </h1>
+    
+                    <!-- Tavsif -->
+                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        TaskFlow — bu zamonaviy jamoangiz uchun aqlli vazifa boshqaruv platformasi. 14 kun bepul sinab
+                        ko'ring.
+                    </p>
+    
+                    <!-- Tugmalar -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button
+                            class="bg-brand-600 hover:bg-brand-700 active:bg-brand-900 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl active:scale-95 transition duration-200">
+                            Bepul boshlash →
+                        </button>
+                        <button
+                            class="bg-white hover:bg-gray-50 text-gray-800 font-bold px-8 py-4 rounded-xl shadow border border-gray-200 hover:border-brand-300 transition duration-200">
+                            ▶ Demo ko'rish
+                        </button>
+                    </div>
+    
+                    <!-- Foydalanuvchilar -->
+                    <div class="flex items-center gap-4 justify-center lg:justify-start pt-4">
+                        <div class="flex -space-x-2">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-400 to-red-500 border-2 border-white">
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 border-2 border-white">
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 border-2 border-white">
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 border-2 border-white">
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600">
+                            <span class="font-bold text-gray-900">10,000+</span> foydalanuvchi ishonadi
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <!-- O'ng: vizual mockup -->
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
+                        <div class="flex items-center gap-2 mb-4 pb-4 border-b">
+                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 p-3 bg-brand-50 rounded-lg">
+                                <div
+                                    class="w-5 h-5 bg-brand-500 rounded-full flex items-center justify-center text-white text-xs">
+                                    ✓</div>
+                                <span class="text-gray-700 line-through">Dizayn taqdimoti</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <div class="w-5 h-5 border-2 border-gray-300 rounded-full"></div>
+                                <span class="text-gray-700">Frontend yangilash</span>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                                <div class="w-5 h-5 border-2 border-gray-300 rounded-full"></div>
+                                <span class="text-gray-700">API integratsiya</span>
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 bg-gradient-to-r from-brand-100 to-purple-100 rounded-lg">
+                                <div class="w-5 h-5 border-2 border-brand-500 rounded-full"></div>
+                                <span class="text-gray-700 font-medium">Mijoz bilan uchrashuv 🎯</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Floating elements -->
+                    <div
+                        class="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-3 border border-gray-100 hidden md:block animate-bounce">
+                        <span class="text-2xl">🎉</span>
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-3 border border-gray-100 hidden md:block">
+                        <span class="text-2xl">⚡</span>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+    
+            <!-- Sarlavha -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-sm font-bold uppercase tracking-widest text-brand-600 mb-3">
+                    IMKONIYATLAR
+                </p>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Hamma kerakli narsa bitta joyda
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Murakkab loyihalarni soddalashtiramiz. Jamoangiz uchun mukammal vositalar to'plami.
+                </p>
+            </div>
+    
+            <!-- 6 ta feature karta -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+                <div
+                    class="group p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition duration-300">
+                        ⚡
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Tezkor sinxronizatsiya</h3>
+                    <p class="mt-2 text-gray-600 leading-relaxed">
+                        Real-time o'zgarishlar bilan jamoangiz har doim bir xil sahifada.
+                    </p>
+                </div>
+    
+                <div
+                    class="group p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition duration-300">
+                        🤖
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">AI yordamchi</h3>
+                    <p class="mt-2 text-gray-600 leading-relaxed">
+                        Vazifalarni avtomatik taqsimlash va aqlli takliflar.
+                    </p>
+                </div>
+    
+                <div
+                    class="group p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition duration-300">
+                        📊
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Tahlil va statistika</h3>
+                    <p class="mt-2 text-gray-600 leading-relaxed">
+                        Jamoa unumdorligini batafsil dashboard'da kuzating.
+                    </p>
+                </div>
+    
+                <div
+                    class="group p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition duration-300">
+                        🔒
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Xavfsiz</h3>
+                    <p class="mt-2 text-gray-600 leading-relaxed">
+                        End-to-end shifrlash va GDPR muvofiqligi.
+                    </p>
+                </div>
+    
+                <div
+                    class="group p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition duration-300">
+                        🌐
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">Ko'p platformali</h3>
+                    <p class="mt-2 text-gray-600 leading-relaxed">
+                        Veb, iOS, Android va Desktop'da bir xil tajriba.
+                    </p>
+                </div>
+    
+                <div
+                    class="group p-6 rounded-2xl border border-gray-100 hover:border-brand-200 hover:shadow-xl transition duration-300">
+                    <div
+                        class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl group-hover:scale-110 group-hover:rotate-6 transition duration-300">
+                        🔌
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mt-4">100+ integratsiya</h3>
+                    <p class="mt-2 text-gray-600 leading-relaxed">
+                        Slack, Google, Notion va boshqa sevimli vositalar bilan.
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <!-- PRICING -->
+    <section id="pricing" class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+    
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-sm font-bold uppercase tracking-widest text-brand-600 mb-3">
+                    TARIFLAR
+                </p>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Sizga mos rejani tanlang
+                </h2>
+            </div>
+    
+            <div class="grid md:grid-cols-3 gap-6 items-stretch">
+    
+                <!-- Starter -->
+                <div class="bg-white rounded-2xl shadow border border-gray-100 p-8 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-gray-900">Starter</h3>
+                    <p class="text-gray-500 mt-1">Boshlovchilar uchun</p>
+                    <div class="mt-6">
+                        <span class="text-5xl font-extrabold text-gray-900">$0</span>
+                        <span class="text-gray-500">/oy</span>
+                    </div>
+                    <ul class="mt-8 space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">3 ta loyiha</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">5 ta jamoa a'zosi</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">Asosiy hisobotlar</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">Email yordam</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="mt-8 w-full py-3 rounded-xl border-2 border-brand-500 text-brand-600 font-bold hover:bg-brand-500 hover:text-white transition">
+                        Boshlash
+                    </button>
+                </div>
+    
+                <!-- Pro (POPULYAR) -->
+                <div
+                    class="relative bg-gradient-to-br from-brand-600 to-purple-600 rounded-2xl shadow-2xl p-8 text-white md:scale-105">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                        <span
+                            class="bg-yellow-400 text-yellow-900 text-xs font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full">
+                            ★ Eng populyar
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold">Pro</h3>
+                    <p class="text-brand-100 mt-1">Faol jamoalar uchun</p>
+                    <div class="mt-6">
+                        <span class="text-5xl font-extrabold">$29</span>
+                        <span class="text-brand-100">/oy</span>
+                    </div>
+                    <ul class="mt-8 space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold mt-1">✓</span>
+                            <span>Cheksiz loyihalar</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold mt-1">✓</span>
+                            <span>Cheksiz jamoa a'zolari</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold mt-1">✓</span>
+                            <span>Ilg'or tahlil</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold mt-1">✓</span>
+                            <span>24/7 ustuvor yordam</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="font-bold mt-1">✓</span>
+                            <span>AI yordamchi</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="mt-8 w-full py-3 rounded-xl bg-white text-brand-600 font-bold hover:bg-gray-100 active:scale-95 transition">
+                        Pro'ga o'tish
+                    </button>
+                </div>
+    
+                <!-- Enterprise -->
+                <div class="bg-white rounded-2xl shadow border border-gray-100 p-8 hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-bold text-gray-900">Enterprise</h3>
+                    <p class="text-gray-500 mt-1">Yirik kompaniyalar uchun</p>
+                    <div class="mt-6">
+                        <span class="text-5xl font-extrabold text-gray-900">$99</span>
+                        <span class="text-gray-500">/oy</span>
+                    </div>
+                    <ul class="mt-8 space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">Hammasi Pro'da bor</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">Maxsus menejer</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">SSO va SAML</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-500 font-bold mt-1">✓</span>
+                            <span class="text-gray-700">Custom integratsiya</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="mt-8 w-full py-3 rounded-xl bg-gray-900 text-white font-bold hover:bg-gray-700 active:scale-95 transition">
+                        Bog'lanish
+                    </button>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    <!-- CTA -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-brand-600 via-purple-600 to-pink-600">
+        <div class="max-w-4xl mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4 leading-tight">
+                Bugun TaskFlow bilan boshlang
+            </h2>
+            <p class="text-lg md:text-xl text-purple-100 mb-8 leading-relaxed">
+                14 kun bepul sinov muddat. Karta talab qilinmaydi.
+            </p>
+            <button
+                class="bg-white text-brand-600 hover:bg-gray-100 active:scale-95 font-extrabold px-8 py-4 rounded-xl shadow-2xl transition duration-200">
+                Hoziroq boshlash →
+            </button>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+    
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-br from-brand-500 to-brand-700 rounded-lg flex items-center justify-center text-white font-bold">
+                            T</div>
+                        <span class="text-xl font-bold text-white">TaskFlow</span>
+                    </div>
+                    <p class="text-sm leading-relaxed">
+                        Zamonaviy jamoalar uchun aqlli vazifa boshqaruv platformasi.
+                    </p>
+                </div>
+    
+                <div>
+                    <h4 class="text-white font-bold mb-4">Mahsulot</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Imkoniyatlar</a></li>
+                        <li><a href="#" class="hover:text-white transition">Tariflar</a></li>
+                        <li><a href="#" class="hover:text-white transition">Yangiliklar</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="text-white font-bold mb-4">Kompaniya</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Biz haqimizda</a></li>
+                        <li><a href="#" class="hover:text-white transition">Karera</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h4 class="text-white font-bold mb-4">Yordam</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Aloqa</a></li>
+                        <li><a href="#" class="hover:text-white transition">Hujjatlar</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm">© 2026 TaskFlow. Barcha huquqlar himoyalangan.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition">Maxfiylik</a>
+                    <a href="#" class="hover:text-white transition">Shartlar</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind: Flexbox & Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center gap-6">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-blue-600 flex-none">
+                MyShop
+            </div>
+            <!-- Qidiruv (o'rtada cho'ziladi) -->
+            <input type="text" placeholder="Maxsulotni qidirish..."
+                class="flex-1 px-4 py-4 border border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none">
+            <!-- Tugmalar -->
+            <div class="flex gap-2 flex-none">
+                <button class="px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg font-medium">Kirish</button>
+                <button class="px-4 py-2 bg-blue-500 hover:bg-blue-700 text-white rounded-lg font-medium">Ro'yxatdan
+                    o'tish</button>
+            </div>
+        </div>
+    </header>
+    <div class="min-h-screen bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Sarlavha -->
+            <h1 class="text-3xl font-bold text-gray-900 mb-8">Bizning maahsulotlari</h1>
+
+            <!-- 3-ustunli grid -->
+            <div class="grid grid-cols-3 gap-6">
+
+                <!-- Karta 1 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg trabsition overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-40"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900">Smart Watch Pro</h3>
+                        <p class="text-green-600 font-bold mt-2">2 500 000 so'm</p>
+                    </div>
+                </div>
+
+                <!-- Karta 2 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg trabsition overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-40"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900">Wireless Headphones</h3>
+                        <p class="text-green-600 font-bold mt-2">1 250 000 so'm</p>
+                    </div>
+                </div>
+
+
+                <!-- Karta 3 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg trabsition overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-40"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900">Bluetooth Speaker</h3>
+                        <p class="text-green-600 font-bold mt-2">850 000 so'm</p>
+                    </div>
+                </div>
+
+                <!-- Karta 4 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg trabsition overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-40"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900">Gaming Mouse</h3>
+                        <p class="text-green-600 font-bold mt-2">450 000 so'm</p>
+                    </div>
+                </div>
+
+                <!-- Karta 5 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg trabsition overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-40"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900">Mechanical Keyboard</h3>
+                        <p class="text-green-600 font-bold mt-2">1 100 000 so'm</p>
+                    </div>
+                </div>
+
+                <!-- Karta 6 -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg trabsition overflow-hidden">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 h-40"></div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900">Webcam HD</h3>
+                        <p class="text-green-600 font-bold mt-2">650 000 so'm</p>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
